@@ -13,8 +13,7 @@ function increment() {
 
 function save() {
   let countStr = count + " - ";
-
   saveEl.textContent += countStr;
-
-  console.log(count);
+  countEl.textContent = 0; // changing the content on screen to 0
+  count = 0; // reseting the var count to 0
 }
